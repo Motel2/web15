@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				list-style: none;
+				position: fixed;
+				right: -80px;
+				top: 200px;
+			}
+			li{
+				width: 128px;
+				height: 54px;
+				line-height: 54px;
+				background: black;
+				color: white;
+				position: relative;
+				left: 0px;
+				transition: left 0.5s;
+			}
+			li:hover{
+				left: -80px;
+				background: blue;
+			}
+			li:nth-child(4):hover{
+				left:0px;
+				background: blue;
+			}
+			.img1{
+				background: black;
+				padding: 10px;
+				border-radius: 10px;
+				position: absolute;
+				top: -40px;
+				left: -180px;
+				opacity: 0;
+				transition: all 0.5s;
+			}
+			li:nth-child(4):hover .img1{
+				left: -200px;
+				opacity: 1;
+			}
+			li:first-child{
+				background: blue;
+			}
+			li:first-child span{
+				width: 30px;
+				height: 30px;
+				position: relative;
+				top: 10px;
+				margin: 0px 10px;
+				display: inline-block;
+				background: url(img/pic.png) -40px -378px;
+			}
+			li:nth-child(2) span{
+				width: 30px;
+				height: 30px;
+				position: relative;
+				top: 10px;
+				margin: 0px 10px;
+				display: inline-block;
+				background: url(img/pic.png) -40px -0px;
+			}
+			li:nth-child(3) span{
+				width: 30px;
+				height: 30px;
+				position: relative;
+				top: 10px;
+				margin: 0px 10px;
+				display: inline-block;
+				background: url(img/pic.png) -40px -184px;
+			}
+			li:nth-child(4) span{
+				width: 30px;
+				height: 30px;
+				position: relative;
+				top: 10px;
+				margin: 0px 10px;
+				display: inline-block;
+				background: url(img/pic.png) -40px -80px;
+			}
+			li:nth-child(5) span{
+				width: 30px;
+				height: 30px;
+				position: relative;
+				top: 10px;
+				margin: 0px 10px;
+				display: inline-block;
+				background: url(img/pic.png) -40px -40px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<span></span>
+				在线客服
+			</li>
+			<li>
+				<span></span>
+				400000000
+			</li>
+			<li>
+				<span></span>
+				教程中心
+			</li>
+			<li>
+				<span></span>
+				<img class="img1" src="img/67e466f095ecaa029c88fcaa55b449d5-150x150.jpg" />
+			</li>
+			<li>
+				<span></span>
+				QQ客服
+			</li>
+		</ul>
+	</body>
+</html>
